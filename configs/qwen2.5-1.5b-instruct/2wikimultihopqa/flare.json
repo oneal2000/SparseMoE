@@ -1,0 +1,19 @@
+{
+    "model_name_or_path": "/liuzyai04/thuir/tyc/LLM/Qwen2.5-1.5B-Instruct",
+    "method": "token",
+    "dataset": "2wikimultihopqa",
+    "data_path": "../data/2wikimultihopqa",
+    "fewshot": 6,
+    "sample": 300,
+    "shuffle": false,
+    "generate_max_length": 300,
+    "query_formulation": "forward_all",
+    "output_dir": "../result/qwen2.5_1.5b_2wikimultihopqa",
+    "retriever": "BM25",
+    "es_index_name": "wiki",
+    "retrieve_topk": 3,
+    "hallucination_threshold": 0.1,
+    "use_counter": true,
+    "sentence_solver": "avg",
+    "entity_solver": "avg"
+}

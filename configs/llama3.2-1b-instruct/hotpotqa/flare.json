@@ -1,0 +1,19 @@
+{
+    "model_name_or_path": "/liuzyai04/thuir/tyc/LLM/Llama-3.2-1B-Instruct",
+    "method": "token",
+    "dataset": "hotpotqa",
+    "data_path": "../data/hotpotqa",
+    "fewshot": 6,
+    "sample": 300,
+    "shuffle": false,
+    "generate_max_length": 300,
+    "query_formulation": "forward_all",
+    "output_dir": "../result/llama3.2_1b_hotpotqa",
+    "retriever": "BM25",
+    "es_index_name": "wiki",
+    "retrieve_topk": 3,
+    "hallucination_threshold": 0.1,
+    "use_counter": true,
+    "sentence_solver": "avg",
+    "entity_solver": "avg"
+}

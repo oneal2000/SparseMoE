@@ -1,0 +1,18 @@
+{
+    "model_name_or_path": "/liuzyai04/thuir/LLM/Meta-Llama-3-8B-Instruct",
+    "method": "token",
+    "dataset": "cwq",
+    "data_path": "../data/complexwebquestions",
+    "fewshot": 6,
+    "sample": 300,
+    "shuffle": false,
+    "generate_max_length": 100,
+    "query_formulation": "direct",
+    "output_dir": "../result/llama3_8b_cwq",
+    "retriever": "BM25",
+    "es_index_name": "wiki",
+    "retrieve_topk": 3,
+    "hallucination_threshold": 0.08,
+    "use_counter": true,
+    "sentence_solver": "avg"
+}
